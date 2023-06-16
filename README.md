@@ -1,6 +1,7 @@
 # LucidPage
 Welcome to LucidPage, a minimalist startpage with a captivating glass effect. This repository provides a customizable startpage that you can set as your browser's 
 primary startpage. It offers a clean and sleek design to enhance your browsing experience.
+https://lucid-page.netlify.app/
 
 # Installation
 To set up LucidPage as your primary startpage, follow these steps:
