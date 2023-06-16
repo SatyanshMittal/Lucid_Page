@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Glass Start Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@700&family=Merriweather&family=Qwitcher+Grypen:wght@700&family=Titillium+Web:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@700&family=Merriweather&family=Qwitcher+Grypen:wght@700&family=Titillium+Web:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap");
+    </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@700&family=Merriweather&family=Qwitcher+Grypen:wght@700&family=Titillium+Web:wght@300&display=swap");
+    </style>
+  </head>
+
+  <body>
+    
+    <div class="baap">
+    
+    <div class="big">
+      <div class="daily-container">
+        <a href="https://twitter.com/home" class="daily-link"><img class="logo" src="logo\Twitter.png" alt=""></a>
+        <a href="https://discord.com" class="daily-link"><img class="logo" src="logo\Discord.png" alt=""></a>
+       
+        <a href="https://mail.google.com/mail/u/0/#inbox" class="daily-link"><img src="logo\Gmail.png" alt="" class="logo"></a>
+        <a href="https://open.spotify.com/" class="daily-link"><img src="logo\Spotify.png" alt="" class="logo"></a>
+        <a href="https://drive.google.com/drive/my-drive" class="daily-link"><img src="logo\Drive.png" alt="" class="logo"></a>
+      </div>
+
+
+
+      <div class="daily-container">
+        <a href="https://www.youtube.com/" class="daily-link"><img class="logo" src="logo\Youtube.png" alt=""></a>
+        <a href="https://www.linkedin.com/" class="daily-link"><img class="logo" src="logo\LinkedIn.png" alt=""></a>
+        <a href="https://reddit.com" class="daily-link"><img src="logo\Reddit.png" alt="" class="logo"></a>
+        <a href="https://instagram.com/" class="daily-link"><img src="logo\Instagram.png" alt="" class="logo"></a>
+        <a href="https://chat.openai.com/" class="daily-link"><img src="logo\Chatgpt.png" alt="" class="logo"></a>
+      </div>
+
+
+      
+      <div style="display: flex; justify-content: center; align-items: center; ">
+        <div class="search">
+        <form style=" z-index: -1; " action="https://www.google.com/search">
+          <div class="label"> 
+          <input type="text" name="q" class="search-input" placeholder="Search here " autofocus autocomplete="off" >
+          <button id="search-button" type="submit" class="search-button"><img src="images/search-26242.png" class="icon" alt=""></button></div>
+        </form>
+      </div>
+      </div>
+
+    </div>
+
+
+    <div class="left-container">
+      <div class="clock-container">
+        <div class="clock">
+          <div class="font">
+            <div id="hours" style="padding: 3px; margin: 0;">11</div>
+            <div style="padding: 3px; margin: 0;">:</div>
+            <div id="minutes" style="padding: 3px; margin: 0;">11</div>
+            <span id="am-pm" class="am-pm" >AM</span>
+            </div>
+        </div>
+      </div>
+
+
+  <div class="container">
+    <div id="weather-info">
+      <p id="location" style="margin: 0; padding: 10px 0 20px 0px;"></p>
+      <div style="display: flex; align-items: center; justify-content: flex-start; width: 337px;">
+      <p id="temperature" style="margin: 0; padding: 10px 0px 10px 0px;"></p>
+      
+
+      <p id="description" style="margin: 0; padding: 17px 0px 0px 15px;"></p>
+    </div>
+    </div>
+  </div>
+
+  
+
+  <div class="container-2">
+    <h1 class="to-do">TO-DO</h1>
+
+
+  <div class="task-input">
+    <input type="text" id="taskInput" placeholder="Enter a task" onkeypress="handleKeyPress(event)" class="taskInput">
+  </div>
+  <ul class="task-list" id="taskList"></ul>
+</div>
+
+
+  </div>  
+  </body>
+  <script src="script.js"></script>
+</html>

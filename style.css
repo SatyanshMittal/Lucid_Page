@@ -1,0 +1,378 @@
+  @import url('https://fonts.googleapis.com/css2?family=Caladea&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@200&display=swap'); 
+  @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600&family=Monoton&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Moirai+One&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Megrim&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;500&display=swap');
+
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+  background-image: url("images/view-land-galapagos-islands-ecuador.jpg");
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: "Manrope", sans-serif;
+  font-family: "Merriweather", serif;
+  font-family: "Qwitcher Grypen", cursive;
+
+
+}
+.big-box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.big {
+  position: fixed;
+  width: 1000px;
+  height: 85%;
+  position: fixed;
+  left: 63%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  backdrop-filter: blur(1.4px); 
+
+  background: rgba(0, 0, 0, 0.447);  
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  margin: 0;
+}
+
+
+.daily-container {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.daily-link {
+  height: 140px;
+  width: 140px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 45px;
+
+  --green: #1bd0fd;
+  font-size: 15px;
+  padding: 0.7em 2.7em;
+
+  position: relative;
+  font-family: inherit;
+
+  overflow: hidden;
+  transition: all 0.3s;
+  line-height: 1.4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 20%;
+}
+
+.daily-link:hover {
+  color: #82ffc9;
+}
+
+.daily-link:before {
+  content: "";
+  position: absolute;
+  left: -4em;
+  width: 4em;
+  height: 100%;
+  top: 0;
+  transition: transform 0.4s ;
+  background: linear-gradient(
+    to right,
+    transparent 1%,
+    rgba(27, 253, 156, 0.1) 40%,
+    rgba(27, 253, 156, 0.1) 60%,
+    transparent 100%
+  );
+}
+
+.daily-link:hover:before {
+  transform: translateX(15em);
+}
+
+.logo {
+  width: 85px;
+  height: 85px;
+}
+
+.daily-link:hover .logo {
+  width: 120px;
+  height: 120px;
+  transition:  0.3s;
+}
+
+
+
+
+
+
+.search-input {
+  width: 700px;
+  border-radius: 10px;
+  padding: 20px 25px;
+    background: transparent;
+    border-color: transparent;
+    color: #e4dcdc;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+    padding: 0 0 0 15px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+
+    
+    
+    
+    
+}
+
+input:active {
+  box-shadow: 2px 2px 15px #8707ff inset;
+}
+
+.search {
+  padding-top: 70px;
+}
+
+input:focus {
+  outline-style: none;
+  box-shadow: none;
+}
+
+
+
+.label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:  rgb(255 255 255 / 8%);
+  border-color: transparent;
+  color: #fff;  
+  padding: 0;
+  margin: 0;
+  height: 60px;
+} 
+
+.icon {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  padding: 0 15px 0 0;
+  background: transparent;
+}
+
+.search-button {
+  background: transparent;
+  border: none;
+}
+
+
+.left-container {
+  position: fixed;
+  width: 400px;
+  height: 100%;
+  left: 13.046%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.447);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+}
+
+
+
+
+.container {
+  max-width: px;
+  margin: 0 0 0 1px;
+  border-radius: 10px;
+  display: flex;
+  padding: 0 0 0 12px;
+
+  align-items: center;
+  padding-bottom: 1px;
+
+
+}
+
+h1 {
+  margin-top: 0;
+  font-family: "Orbitron", sans-serif;
+  padding-top: 0 ;
+
+}
+
+#location {
+  font-size: 54px;
+  text-transform: uppercase;
+  font-family: 'Exo 2', sans-serif; 
+  font-weight: 300;
+  
+}
+
+#temperature {
+  font-size: 47px;
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 300;
+}
+
+#description {
+  font-size: 23px;
+  text-transform: capitalize;
+  font-family: 'Exo 2', sans-serif;
+}
+
+
+
+.clock {
+  margin: 0px 0 0 0;
+  color: rgb(228, 220, 220);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 0;
+  padding-bottom: 27px;
+  padding-left: 0;
+}
+.font {
+  font-size: 110px;
+  font-family: 'Exo 2', sans-serif;
+
+  font-weight: 500;
+  padding: 0;
+  margin-right: 02px;
+
+  display: flex;
+  align-items: flex-end;
+  
+}
+
+.am-pm {
+  text-transform: lowercase;
+   font-size: 55px; 
+   padding: 0px 3px 0 0;
+    margin: 0 0 15px 0;
+     font-family: 'Exo 2', sans-serif;
+            font-weight: 300;
+}
+
+
+
+
+
+
+.container-2 {
+  max-width: 400px;
+  margin: 0 auto;
+  padding-left: 12px;
+  border-radius: 5px;
+  padding-top: 40px;
+ 
+  border: none;
+  background: none;
+  
+}
+
+.task-input {
+  margin-bottom: 10px;
+  background-color:  rgb(255 255 255 / 8%);
+  border-color: none;
+  padding: 7px 0 7px 0;
+  max-width: 350px;
+  
+}
+
+.task-input input[type="text"] {
+  width: 80%;
+  padding: 5px;
+  border-radius: 3px;
+  background: transparent;
+    
+
+}
+
+
+
+
+
+.task-list {
+  list-style-type: none;
+  padding: 0;
+  font-family: 'Quicksand', sans-serif;
+  
+}
+
+.task-list li {
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  transition: opacity 0.5s;
+  font-size: 20px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.task-list li input[type="checkbox"] {
+  margin-right: 5px;
+  color: red;
+  
+  
+}
+
+
+::placeholder {
+  color: #aa9e9e;
+}
+
+
+.task-list li.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.taskInput {
+  color: white;
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 200px;
+  
+}
+
+.task-button {
+  background: transparent;
+  border: none;
+}
+
+
+
+.to-do {
+  font-family:'Exo 2', sans-serif;
+}
+
+
+.task-list {
+ display: flex;
+ flex-direction: column;
+}
